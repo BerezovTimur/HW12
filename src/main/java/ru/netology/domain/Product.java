@@ -39,4 +39,11 @@ public class Product {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public boolean matches(String search) {
+        if (name.equalsIgnoreCase(search)) {
+            return true;
+        }
+        return false;
+    }
 }

@@ -1,24 +1,23 @@
-package ru.netology.repository;
+package ru.netology.ru.netology.manager;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
-import ru.netology.ru.netology.manager.ProductManager;
+import ru.netology.repository.ProductRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProductRepositoryTest {
+class ProductManagerTest {
     private ProductRepository repository = new ProductRepository();
     ProductManager manager = new ProductManager(repository);
-    Book first = new Book(1,"Война и мир",1000,"Толстой");
-    Book second = new Book(2,"Отцы и дети",1000,"Тургенев");
-    Book third = new Book(3, "Преступление и наказание", 1000, "Достоевский");
-    Book fourth = new Book(4,"Galaxy",1000,"Noname");
-    Smartphone xiaomi = new Smartphone(5,"Mi",10000,"Xiaomi");
-    Smartphone samsung = new Smartphone(6,"Galaxy",20000,"Samsung");
-
+    private Book first = new Book(1,"Война и мир",1000,"Толстой");
+    private Book second = new Book(2,"Отцы и дети",1000,"Тургенев");
+    private Book third = new Book(3, "Преступление и наказание", 1000, "Достоевский");
+    private Book fourth = new Book(4,"Galaxy",1000,"Noname");
+    private Smartphone xiaomi = new Smartphone(5,"Mi",10000,"Xiaomi");
+    private Smartphone samsung = new Smartphone(6,"Galaxy",20000,"Samsung");
 
     @BeforeEach
     void setup() {
@@ -101,5 +100,4 @@ class ProductRepositoryTest {
         Product[] actual = manager.searchBy(textToFind);
         assertArrayEquals(expected, actual);
     }
-
 }
