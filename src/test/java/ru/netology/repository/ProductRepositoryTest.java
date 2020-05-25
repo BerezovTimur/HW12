@@ -49,9 +49,9 @@ class ProductRepositoryTest {
 
     @Test
     void shouldFindBookByAuthorIfExists() {
-        String textToFind = "Чехов";
+        String textToFind = "Толстой";
         manager.searchBy(textToFind);
-        Product[] expected = new Product[]{fourth};
+        Product[] expected = new Product[]{first};
         Product[] actual = manager.searchBy(textToFind);
         assertArrayEquals(expected, actual);
     }
