@@ -2,7 +2,7 @@ package ru.netology.ru.netology.manager;
 
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
-import ru.netology.domain.ru.netology.domain.Smartphone;
+import ru.netology.domain.Smartphone;
 import ru.netology.repository.ProductRepository;
 
 public class ProductManager {
