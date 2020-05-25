@@ -21,4 +21,6 @@ public class Smartphone extends Product {
     public void setVendor(String vendor) {
         this.vendor = vendor;
     }
+
+
 }
