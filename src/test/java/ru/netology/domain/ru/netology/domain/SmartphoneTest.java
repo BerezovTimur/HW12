@@ -1,8 +1,7 @@
 package ru.netology.domain.ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import ru.netology.domain.Smartphone;
 
 class SmartphoneTest {
     Smartphone smartphone = new Smartphone(5,"Mi",10000,"Xiaomi");

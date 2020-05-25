@@ -1,4 +1,4 @@
-package ru.netology.domain.ru.netology.domain;
+package ru.netology.domain;
 
 import ru.netology.domain.Product;
 
@@ -21,6 +21,4 @@ public class Smartphone extends Product {
     public void setVendor(String vendor) {
         this.vendor = vendor;
     }
-
-
 }
