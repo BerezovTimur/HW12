@@ -1,4 +1,4 @@
-package ru.netology.ru.netology.manager;
+package ru.netology.manager;
 
 import ru.netology.domain.Product;
 import ru.netology.repository.ProductRepository;
