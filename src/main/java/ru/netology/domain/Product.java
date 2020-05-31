@@ -39,9 +39,6 @@ public class Product {
     }
 
     public boolean matches(String search) {
-        if (name.equalsIgnoreCase(search)) {
-            return true;
-        }
-        return false;
+        return name.equalsIgnoreCase(search);
     }
 }
